@@ -1,0 +1,113 @@
+@charset "utf-8";
+html,body {
+  height: 100%;
+}
+.jd_container {
+  width: 100%;
+  height: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  /*background-color: pink;*/
+  margin: 0 auto;
+  position: relative;
+  padding-top: 44px;
+}
+/*分类页的头部*/
+.jd_container .jd_header {
+  width: 100%;
+  height: 44px;
+  /*background-color: greenyellow;*/
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(#fff,#ccc);
+  /*position: relative;*/
+  
+}
+.jd_header .icon_back,
+.jd_header .icon_menu {
+  width: 44px;
+  height: 44px;
+  /*background-color: blue;*/
+  position: absolute;
+  top:0;
+  padding: 12px;
+  background-clip: content-box;
+  background-origin: content-box;
+}
+.jd_header .icon_back {
+  left: 0;
+  background-position: -20px 0;
+}
+.jd_header .icon_menu {
+  right: 0;
+  background-position: -60px 0;
+}
+.search {
+  height: 44px;
+  margin: 0 44px;
+}
+.search input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 7px;
+}
+
+/*分类页的主体部分*/
+.jd_main {
+  height: 100%;
+  /*background-color: blue;*/
+}
+/*分类页的导航部分*/
+.jd_main .jd_nav {
+  width: 90px;
+  height: 100%;
+  /*background-color: pink;*/
+  float: left;
+  overflow: hidden;
+}
+.jd_nav ul li {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: solid 1px #f23030;
+  border-right: solid 1px #f23030;
+  color: #000;
+  background-color: pink;
+}
+.jd_nav ul li.active {
+  border-right-color: #fff;
+  background-color: #fff;
+}
+.jd_nav li.active a {
+  color: red;
+}
+/*分类页的主体内容部分*/
+.jd_main .jd_content {
+  height: 100%;
+  /*overflow: hidden 触发bfc 可以流式布局*/
+  overflow: hidden;
+  background-color: #fff;
+}
+.jd_content .img-box {
+  padding: 10px;
+}
+.jd_content h3 {
+  font-weight: 700;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.jd_content ul li {
+  float: left;
+  width: 33.33%;
+}
+.jd_content li img {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+.jd_content li p {
+  text-align: center;
+  line-height: 30px;
+}
